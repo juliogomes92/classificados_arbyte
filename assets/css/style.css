@@ -2228,3 +2228,10 @@ body {}
         color: #777;
     }
 }
+
+.img-alunos {
+    max-width: 100%;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+}
