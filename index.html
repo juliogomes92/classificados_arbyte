@@ -24,6 +24,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                     <li><a href="#footer">Contato</a></li>
 
                     <li></li>
-                    <button id="login" type="menu" class="btn btn-warning" style="text-align: center;"><a href="login.html">Login</a></button>
+                    <button id="login" type="menu" class="btn btn-warning" style="font-weight: bolder;"><a href="login.html">Login</a></button>
 
                 </ul>
             </nav>
@@ -57,7 +58,7 @@
         <div class="hero-container">
             <h3>Bem-vindo ao <strong>Classificados Arbyte</strong></h3>
             <h2>Encontre o profissional certo para o seu negócio</h2>
-            <a href="#portfolio" class="btn-get-started scrollto">Conheça nossos alunos</a>
+            <a href="#alunos" class="btn-get-started scrollto">Conheça nossos alunos</a>
         </div>
     </section>
     <!-- End Hero -->
@@ -102,392 +103,75 @@
     </main>
     <!-- End Services Section -->
 
-    <!--Carousel Wrapper-->
-    <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel" style="background-color: #EEC900;">
 
-        <!--Controls-->
-        <div id="alunos" class="controls-top align-items-center">
-            <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i
-        class="fas fa-chevron-left"></i></a>
-            <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i
-         class="fas fa-chevron-right"></i></a>
-        </div>
-        <!--/.Controls-->
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-with-lb" data-slide-to="0" class="active secondary-color"></li>
-            <li data-target="#carousel-with-lb" data-slide-to="1" class="secondary-color"></li>
-            <li data-target="#carousel-with-lb" data-slide-to="2" class="secondary-color"></li>
-            <li data-target="#carousel-with-lb" data-slide-to="3" class="secondary-color"></li>
+    <!-- ======= Portfolio Section ======= -->
+    <div style="background-color: darkgoldenrod;">
+        <div class="main">
+            <div id="myBtnContainer">
+                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('html')"> HTML/CSS</button>
+                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('js')"> JavaScript</button>
+                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('bd')"> BD</button>
+            </div>
 
-        </ol>
-        <!--/.Indicators-->
-
-        <!--Slides and lightbox-->
-
-        <div class="carousel-inner mdb-lightbox" role="listbox">
-            <div id="mdb-lightbox-ui"></div>
-            <!--First slide-->
-            <div class=" carousel-item active text-center">
-
-                <!-- Portfolio Item 1-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos" src="assets/img/team-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-3 d-md-inline-block">
+            <!-- Portfolio Gallery Grid -->
+            <div id="alunos" class="row">
+                <div class="col-md-3 column html">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
                     </div>
                 </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-alunos" src="assets/img/comments-3.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 5-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                <div class="col-md-3 column js">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <img class="img-alunos" src="assets/img/comments-1.jpg" alt="" />
                     </div>
                 </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-3 d-md-inline-block">
+                <div class="col-md-3 column html">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/team-2.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 7-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-alunos" src="assets/img/team-3.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 8-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos" src="assets/img/comments-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 9-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/team-4.jpg" alt="" />
-                    </div>
-                </div>
-
-            </div>
-            <!--/.First slide-->
-
-            <!--Second slide-->
-            <div class="carousel-item text-center">
-
-                <!-- Portfolio Item 1-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos" src="assets/img/team-3.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-alunos" src="assets/img/team-2.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 5-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos" src="assets/img/team-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 7-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                         <img class="img-alunos" src="assets/img/comments-3.jpg" alt="" />
                     </div>
                 </div>
-                <!-- Portfolio Item 8-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                <div class="col-md-3 column js">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
                     </div>
                 </div>
-                <!-- Portfolio Item 9-->
-                <div class="col-md-3 d-md-inline-block">
+                <div class="col-md-3 column html">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
                     </div>
                 </div>
-
-            </div>
-            <!--/.Second slide-->
-
-            <!--Third slide-->
-            <div class="carousel-item text-center">
-
-                <!-- Portfolio Item 1-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos" src="assets/img/team-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-3 d-md-inline-block">
+                <div class="col-md-3 column js">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-alunos" src="assets/img/comments-3.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
                         <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
                     </div>
                 </div>
-
-                <!-- Portfolio Item 5-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos" src="assets/img/comments-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-3 d-md-inline-block">
+                <div class="col-md-3 column html">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
                     </div>
                 </div>
-                <br/><br/>
-                <!-- Portfolio Item 7-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-alunos" src="assets/img/comments-3.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 8-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                <div class="col-md-3 column bd">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                         <img class="img-alunos" src="assets/img/comments-1.jpg" alt="" />
                     </div>
                 </div>
-                <!-- Portfolio Item 9-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-
-            </div>
-            <!--/.Third slide-->
-
-            <!--Fourth slide-->
-            <div class=" carousel-item text-center">
-
-                <!-- Portfolio Item 1-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-fluid" src="assets/img/comments-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-fluid" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-fluid" src="assets/img/comments-3.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <img class="img-fluid" src="assets/img/comments-4.jpg" alt="" />
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 5-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-fluid" src="assets/img/comments-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-fluid" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-                <br/><br/>
-                <!-- Portfolio Item 7-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-fluid" src="assets/img/comments-3.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 8-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-fluid" src="assets/img/comments-1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 9-->
-                <div class="col-md-3 d-md-inline-block">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-fluid" src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                </div>
-
-            </div>
-            <!--/.Fourth slide-->
-
-        </div>
-        <!--/.Slides-->
-
-    </div>
-    <!--/.Carousel Wrapper-->
-
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bruna Oliveira</h2>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/comments-1.jpg" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                            class="fas fa-times fa-fw"></i>Fechar</button>
-                            </div>
-                        </div>
+                <!-- END GRID -->
+                <div class="btn-toolbar btn-block" style="align-content: center;" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-warning" onclick="Selection">1</button>
+                        <button type="button" class="btn btn-warning">2</button>
+                        <button type="button" class="btn btn-warning">3</button>
+                        <button type="button" class="btn btn-warning">4</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- END MAIN -->
     </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jhonata Santos</h2>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/comments-2.jpg" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                            class="fas fa-times fa-fw"></i>Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Elizabeth Angel
-                                </h2>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/comments-3.jpg" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                            class="fas fa-times fa-fw"></i>Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mia Yuuki
-                                </h2>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/comments-4.jpg" alt="" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">HTML/CSS, JavaScript
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                            class="fas fa-times fa-fw"></i>Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="background-color: #EEC900;">
-        <br>>
-    </div>
+    <!-- End Portfolio Section -->
 
     <!--=======Footer=======-->
     <footer id="footer">
@@ -551,9 +235,56 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
