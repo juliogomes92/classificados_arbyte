@@ -2099,8 +2099,6 @@ section {
     --input-padding-y: .75rem;
 }
 
-body {}
-
 .card-signin {
     border: 0;
     border-radius: 1rem;
@@ -2233,7 +2231,6 @@ body {}
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 4%;
 }
 
 
