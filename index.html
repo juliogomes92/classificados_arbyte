@@ -106,20 +106,21 @@
 
 
     <!-- ======= Portfolio Section ======= -->
-    <div style="background-color: darkgoldenrod;">
+    <div style="background-color: #EEC900;">
         <div class="main">
             <div id="myBtnContainer">
-                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('html')"> HTML/CSS</button>
-                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('js')"> JavaScript</button>
-                <button class="btn btn-warning" style="font-weight: bolder;" onclick="filterSelection('bd')"> BD</button>
+                <br/>
+                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('html')"> HTML/CSS</button>
+                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('js')"> JavaScript</button>
+                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('bd')"> BD</button>
             </div>
 
             <!-- Portfolio Gallery Grid -->
             <div id="alunos" class="row">
                 <div class="col-md-3 column html">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <img class="img-alunos aluno-selecionado" src="assets/img/comments-2.jpg" alt="" />
                     </div>
                 </div>
                 <div class="col-md-3 column js">
@@ -128,12 +129,12 @@
                     </div>
                 </div>
                 <div class="col-md-3 column html">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                         <img class="img-alunos" src="assets/img/comments-3.jpg" alt="" />
                     </div>
                 </div>
                 <div class="col-md-3 column js">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
                         <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
                     </div>
                 </div>
@@ -160,18 +161,69 @@
                 <!-- END GRID -->
                 <div class="btn-toolbar btn-block" style="align-content: center;" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-warning" onclick="Selection">1</button>
-                        <button type="button" class="btn btn-warning">2</button>
-                        <button type="button" class="btn btn-warning">3</button>
-                        <button type="button" class="btn btn-warning">4</button>
+                        <button type="button" class="btn btn-light" onclick="Selection">1</button>
+                        <button type="button" class="btn btn-light">2</button>
+                        <button type="button" class="btn btn-light">3</button>
+                        <button type="button" class="btn btn-light">4</button>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- END MAIN -->
     </div>
     <!-- End Portfolio Section -->
+
+    <!-- Portfolio Modals-->
+    <!-- Modal extra grande
+
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                ...
+            </div>
+        </div>
+    </div> -->
+    <!-- Portfolio Modal 1-->
+    <div class="modal fade bd-example-modal-xl" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" style='background-color: #FFFFFF;'>
+            <div class='container'>
+                <div class="row">
+                    <!-- Portfolio Modal - Image-->
+                    <div class="col-md-4"> <img class="img-fluid rounded mb-5" style='margin-top: 20px;' src="assets/img/comments-2.jpg" alt="" />
+                    </div>
+                    <!-- Portfolio Modal - Text-->
+                    <div class="col-md-8">
+                        <h3 style='margin-top: 20px;'>James Rodrigues</h3>
+                        <h5> Web Designer - HBO Channel</h5>
+                        <hr>
+                        <h5>Contatos</h5>
+                        <p>Fone/Whatsapp: (11) 9999-9999 <br/> E-mail: contato@contato.com.br <br/>
+                        </p>
+                        <hr>
+                        <h5>Skills</h5>
+                        <p>HTML, CSS, JavaScript<br/> Photoshop, SonyVegas, Ilustrator<br/> Git, Bootstrap </p>
+                        <hr>
+                        <p>Experiência Profisaional</p>
+                        <p>fev-2018 - o momento</p>
+                        <p>Realizo o trabalho com imagens de efeitos especiais para as series</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal-content">
+                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                            class="fas fa-times fa-fw"></i>Fechar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
 
     <!--=======Footer=======-->
     <footer id="footer">
@@ -212,12 +264,11 @@
                     &copy; Copyright <strong><span>Classificados Arbyte</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
-                    Designed by
+                    Designed by Wallace Pinto
                     <a href="#"></a>
                 </div>
 
             </div>
-        </div>
         </div>
     </footer>
     <!-- End Footer -->
