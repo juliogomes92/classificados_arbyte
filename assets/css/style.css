@@ -367,7 +367,7 @@ h6 {
 
 #hero {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: url("../img/inicial.jpg") top center;
     background-size: cover;
     position: relative;
@@ -399,9 +399,8 @@ h6 {
 
 #hero h3 {
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: #000;
     font-size: 26px;
-    padding: 10px 30px;
     margin-bottom: 30px;
     border-radius: 50px;
 }
@@ -2306,4 +2305,78 @@ h1 {
 .btn.active {
     background-color: #9932CC;
     color: white;
+}
+
+.counts {
+    padding: 60px 0;
+}
+
+.counts .count-box {
+    width: 100%;
+    text-align: center;
+}
+
+.counts .count-box span {
+    font-size: 48px;
+    line-height: 48px;
+    display: block;
+    font-weight: 700;
+    color: #9932CC;
+    margin-left: 80px;
+    margin: auto;
+}
+
+.counts .count-box p {
+    padding: 8px 0 0 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #9932CC;
+}
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+
+.clients .clients-wrap {
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.clients .client-logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    background: #fff;
+    height: 120px;
+}
+
+.clients .client-logo img {
+    height: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.clients .client-logo:hover img {
+    -webkit-filter: none;
+    filter: none;
+    transform: scale(1.2);
+}
+
+.clients img {
+    transition: all 0.4s ease-in-out;
+}
+
+.redes-sociais {
+    color: #CBBDE2;
+}
+
+.tag :hover {
+    color: #FFFFFF;
 }

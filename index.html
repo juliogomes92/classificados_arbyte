@@ -33,9 +33,6 @@
         <div class="container d-flex align-items-center">
 
             <h3 class="logo mr-auto"><a href="index.html">Classificados Arbyte</a></h3>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="#header">Início</a></li>
@@ -56,9 +53,193 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-            <h3>Bem-vindo ao <strong>Classificados Arbyte</strong></h3>
-            <h2>Encontre o profissional certo para o seu negócio</h2>
-            <a href="#alunos" class="btn-get-started scrollto">Conheça nossos alunos</a>
+            <!-- ======= Portfolio Section ======= -->
+            <div class="main">
+
+                <!-- Botões de Filtro -->
+                <!--                     <div id="myBtnContainer">
+                        <br/>
+                        <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('html')"> HTML/CSS</button>
+                        <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('js')"> JavaScript</button>
+                        <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('bd')"> BD</button>
+                    </div> -->
+
+                <!-- Portfolio Gallery Grid -->
+                <div id="alunos" class="row" style="margin-top: 90px;">
+                    <div class="col-md-3 column html">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-2.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column js">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-1.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column html">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-3.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column js">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-5.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column html">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-1.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column js">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-3.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column html">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-4.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column bd">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <img class="img-alunos rounded float-left" src="assets/img/comments-5.jpg" alt="" />
+                            <div style='background-color: #FFFFFF; max-width: 200px;'>
+                                <p class="card-text" style='text-align: center;'>James Rodrigues</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
+                    <div class="btn-toolbar btn-block" style="align-content: center; margin-top: 10px;" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group rounded mx-auto d-block" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-light" onclick="Selection">1</button>
+                            <button type="button" class="btn btn-light">2</button>
+                            <button type="button" class="btn btn-light">3</button>
+                            <button type="button" class="btn btn-light">4</button>
+                            <button type="button" class="btn btn-light">5</button>
+                            <button type="button" class="btn btn-light">6</button>
+                            <button type="button" class="btn btn-light">7</button>
+                            <button type="button" class="btn btn-light">8</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MAIN -->
+            </div>
+            <!-- End Portfolio Section -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalLongoExemplo">James Rodrigues</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-md-4 rounded float-left">
+                                <img class="img-fluid" style="align-items: center" src="assets/img/comments-2.jpg" alt="" />
+                            </div>
+                            <!-- Portfolio Modal - Text-->
+                            <div class="col-md-12" style="text-align: left;">
+                                <h5> Web Designer - HBO Channel</h5>
+                                <h6>Disponível para contratação</h6>
+                                <h6> Local: Grande São Paulo</h6>
+                                <h6> Nivel: Junior</h6>
+                                <hr>
+                                <br>
+                                <h5>Skills</h5>
+                                <p>HTML, CSS, JavaScript<br/> Photoshop, SonyVegas, Ilustrator<br/> Git, Bootstrap </p>
+                                <hr>
+                                <p>Experiência Profisaional<br/> fev-2018 - o momento<br/> Realizo o trabalho com imagens de efeitos especiais para as series</p>
+
+                                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style='text-align: center; margin-bottom: 10px;'>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-interval="2000">
+                                            <img src="assets/img/portalunos/av.png" class="img-alunos" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="2000">
+                                            <img src="assets/img/portalunos/cambio.png" class=" img-alunos" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-interval="2000">
+                                            <img src="assets/img/portalunos/classificados.png" class=" img-alunos" alt="...">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="modal fade bd-example-modal-xl" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style='background-color: #FFFFFF;'>
+                <div class='container'>
+                    <div class="row modal-body">
+                        <!-- Portfolio Modal - Image-->
+                        <div class="col-md-4 rounded float-left">
+                            <img class="img-fluid rounded mb-5" style='margin-top: 20px;' src="assets/img/comments-2.jpg" alt="" />
+                            <h3>James Rodrigues</h3>
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                        <!-- Portfolio Modal - Text-->
+                        <div class="col-md-8" style="text-align: left;">
+                            <h5> Web Designer - HBO Channel</h5>
+                            <hr>
+                            <h5>Contatos</h5>
+                            <p>Fone/Whatsapp: (11) 9999-9999 <br/> E-mail: contato@contato.com.br <br/>
+                            </p>
+                            <hr>
+                            <h5>Skills</h5>
+                            <p>HTML, CSS, JavaScript<br/> Photoshop, SonyVegas, Ilustrator<br/> Git, Bootstrap </p>
+                            <hr>
+                            <p>Experiência Profisaional<br/> fev-2018 - o momento<br/> Realizo o trabalho com imagens de efeitos especiais para as series</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End Hero -->
@@ -69,177 +250,115 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h3>Motivos para escolher nossos <span>Alunos</span></h3>
+                    <h3>Conheça nossas <span>Estatísticas</span></h3>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fab fa-html5"></i></div>
-                            <h4 class="title"><a href="">HTML</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                        </div>
-                    </div>
+                <section id="counts" class="counts section-bg">
+                    <div class="container">
 
-                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fab fa-css3"></i></div>
-                            <h4 class="title"><a href="">CSS</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        </div>
-                    </div>
+                        <div class="row justify-content-end">
 
-                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fab fa-js-square"></i></div>
-                            <h4 class="title"><a href="">JavaScript</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <span data-toggle="counter-up">70</span>
+                                    <p>Parceiros</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <span data-toggle="counter-up">4</span>
+                                    <p>Alunos Contratados</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <span data-toggle="counter-up">42</span>
+                                    <p>Quantidade de Alunos</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <span data-toggle="counter-up">2</span>
+                                    <p>Turmas</p>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
-                </div>
+                </section>
 
             </div>
         </section>
     </main>
     <!-- End Services Section -->
 
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients" style="background-color:#DCDCDC;">
 
-
-    <!-- ======= Portfolio Section ======= -->
-    <div style="background-color: #EEC900;">
-        <div class="main">
-            <div id="myBtnContainer">
-                <br/>
-                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('html')"> HTML/CSS</button>
-                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('js')"> JavaScript</button>
-                <button class="btn btn-light" style="font-weight: bolder;" onclick="filterSelection('bd')"> BD</button>
-            </div>
-
-            <!-- Portfolio Gallery Grid -->
-            <div id="alunos" class="row">
-                <div class="col-md-3 column html">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="img-alunos aluno-selecionado" src="assets/img/comments-2.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>James Rodrigues</p>
-                    </div>
-                </div>
-                <div class="col-md-3 column js">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-1.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>Rafaela Meneses</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3 column html">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="img-alunos" src="assets/img/comments-3.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>Jaqueline Yona</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3 column js">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>Renata Pereira</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3 column html">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>Jorge Ramos</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3 column js">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-4.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>INgrid Guimarães</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3 column html">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-2.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>Rui Barbosa</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3 column bd">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-alunos" src="assets/img/comments-1.jpg" alt="" />
-                        <p class="card-text" style='text-align: center; background-color: #FFFFFF; width: 200px; border-radius: 20;'>Laura Gimenes</p>
-
-                    </div>
-                </div>
-                <!-- END GRID -->
-                <div class="btn-toolbar btn-block" style="align-content: center;" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-light" onclick="Selection">1</button>
-                        <button type="button" class="btn btn-light">2</button>
-                        <button type="button" class="btn btn-light">3</button>
-                        <button type="button" class="btn btn-light">4</button>
-                    </div>
-                </div>
-            </div>
+        <div class="section-title">
+            <h3>Conheça as <span>Empresas</span> que contrataram nossos alunos</h3>
         </div>
-        <!-- END MAIN -->
-    </div>
-    <!-- End Portfolio Section -->
+        <div class="container">
 
-    <!-- Portfolio Modals-->
-    <!-- Modal extra grande
+            <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                ...
-            </div>
-        </div>
-    </div> -->
-    <!-- Portfolio Modal 1-->
-    <div class="modal fade bd-example-modal-xl" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" style='background-color: #FFFFFF;'>
-            <div class='container'>
-                <div class="row">
-                    <!-- Portfolio Modal - Image-->
-                    <div class="col-md-4"> <img class="img-fluid rounded mb-5" style='margin-top: 20px;' src="assets/img/comments-2.jpg" alt="" />
-                    </div>
-                    <!-- Portfolio Modal - Text-->
-                    <div class="col-md-8">
-                        <h3 style='margin-top: 20px;'>James Rodrigues</h3>
-                        <h5> Web Designer - HBO Channel</h5>
-                        <hr>
-                        <h5>Contatos</h5>
-                        <p>Fone/Whatsapp: (11) 9999-9999 <br/> E-mail: contato@contato.com.br <br/>
-                        </p>
-                        <hr>
-                        <h5>Skills</h5>
-                        <p>HTML, CSS, JavaScript<br/> Photoshop, SonyVegas, Ilustrator<br/> Git, Bootstrap </p>
-                        <hr>
-                        <p>Experiência Profisaional</p>
-                        <p>fev-2018 - o momento</p>
-                        <p>Realizo o trabalho com imagens de efeitos especiais para as series</p>
-
-
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
                     </div>
                 </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
             </div>
 
-
-            <div class="modal-content">
-                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                            class="fas fa-times fa-fw"></i>Fechar</button>
-            </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
+    </section>
+    <!-- End Clients Section -->
     <!--=======Footer=======-->
     <footer id="footer">
 
